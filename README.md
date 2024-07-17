@@ -40,52 +40,42 @@ Radiplus is a comprehensive solution designed to manage and streamline radiology
 
 ### Steps
 1. **Clone the repository:**
-   ```bash
+   
+bash
    https://github.com/DebraJuma/Radiplus3.0.git
    cd ris
-   ```
+
 
 2.
 **Install dependencies and copy env .file: Into your terminal type the following commands:**
-  ```bash
+  
+bash
 
 composer install
-```
-```
-```bash
-cp .env.example .env
-```
-3.**Generate an application key:**
 
-```bash
+bash
+cp .env.example .env
+3.**Generate an application key:**
+bash
 Copy code
 php artisan key:generate
-```
 4.**Set up your database:**
 
 Create a MySQL database for the project.
 Update the .env file with your database credentials.
 env
-```
+
 DB_DATABASE=your_database
 DB_USERNAME=your_username
 DB_PASSWORD=your_password
-```
 5 .**Run database migrations and seeders:**
-
-```bash
+bash
 php artisan migrate--seed
 Compile assets:
-```
-
 6.**Start the development server:**
-
-```bash
+bash
 
 php artisan serve
-```
-
-
 ## Configuration
 ### Environment Variables
 Adjust the environment variables in the .env file as needed. Key variables include:
